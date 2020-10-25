@@ -1,0 +1,8 @@
+# This will ignore all .import files, as they're only needed by the Godot engine and are not necessary to put on the repo
+*.import
+
+# Ignore .import folder
+.import/
+
+# Only used on macOS (in case anyone here uses it) and not needed
+.DS_Store
