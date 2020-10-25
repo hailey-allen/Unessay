@@ -7,3 +7,4 @@ Things we could include in this are for example:
 - Other things I can't think of rn, will expand later on
 
 We should make folders to keep the assets called "assets" and a folder to keep all the source files like scenes and GDscript files called "src"
+We also have to add a LICENSE file later
