@@ -6,4 +6,4 @@ Things we could include in this are for example:
 - Explaining the source files
 - Other things I can't think of rn, will expand later on
 
-We should make a folers to keeps the assets called "assets" and a folder to keep all the source files like scenes and GDscript files called "src"
+We should make folders to keep the assets called "assets" and a folder to keep all the source files like scenes and GDscript files called "src"
