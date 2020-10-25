@@ -1,0 +1,8 @@
+# For LF normalization in case some doesn't set their autocrlf to input on Windows
+* text=auto
+
+*.png binary
+*.jpg binary
+
+# .tres files and .tscn files are text files so this .gitattributes should be good enough
+# May have to look into what to do for font files if we use any custom fonts
