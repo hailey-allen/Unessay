@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/bg/gray.png" type="Texture" id=1]
+
+[node name="Parallax_BG" type="ParallaxBackground"]
+__meta__ = {
+"_editor_description_": "A scene solely to be a template to add a background to the level. Multiple ParallaxLayers can be added to the ParallaBackground node, but for the template I have chosen to just have a generic gray BG. Instance this into the level scene to add a background to the level. If we ever change the window size of the project then we will need to change the region rect of the sprite to match the window size."
+}
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.1, 0.1 )
+motion_mirroring = Vector2( 64, 64 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 1024, 576 )

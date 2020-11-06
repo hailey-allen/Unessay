@@ -1,4 +1,4 @@
-# For LF normalization in case some doesn't set their autocrlf to input on Windows
+# For LF normalization in case someone doesn't set their autocrlf to input on Windows
 * text=auto eol=lf
 
 *.png binary
