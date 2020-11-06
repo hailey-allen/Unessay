@@ -1,6 +1,12 @@
-# Unessay Group 33 proposal
+# Unessay Group 33 proposal <!-- omit in toc -->
 
-## Title: None yet we seriously need a game title
+## Title: None yet we seriously need a game title <!-- omit in toc -->
+
+- [Mini Game Ideas](#mini-game-ideas)
+- [Proposal](#proposal)
+- [Write-up](#write-up)
+- [Contributions](#contributions)
+- [Rubric](#rubric)
 
 ### Mini Game Ideas
 
@@ -62,3 +68,16 @@ Lubdhak:
 
 - Creating a game that has to do with UNIX file permissions and how having important file permissions is absolutely crucial in maintaining a secure system. I will also contribute a bit to the visual aspect of the game.
   - I might change this up btw because I don't really have an idea for this game but we'll see
+
+### Rubric
+
+|        Criteria:         |                                                            Outstanding                                                             |                                                                                    Adequate                                                                                     |                                                                                          Poor                                                                                          | Weight |
+| :----------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----: |
+|     Visuals/graphics     |         The game is aesthetically pleasing to look at; the entirety of the game maintains cohesive visuals.    Points - 15         | The entirety of the game maintains fairly cohesive and aesthetically pleasing visuals, but some of the visuals don’t match or do not have clear gameplay purposes.  Points - 10 | The visuals are not aesthetically pleasing or cohesive. The entirety of the game does not have completed visuals to it and/or visuals do not serve clear gameplay purposes. Points - 5 |  /15   |
+|       Mini Game 1        | This mini game utilizes or expands upon concepts taught in class and serves an educational purpose in the gameplay.    Points - 15 |                        This mini game has slight connections to concepts covered in class, and has an educational purpose in the gameplay.   Points - 10                        |                   This mini game barely or does not at all connect to concepts covered in class, and does not serve an educational purpose in gameplay.  Points - 5                    |  /15   |
+|       Mini Game 2        | This mini game utilizes or expands upon concepts taught in class and serves an educational purpose in the gameplay.   Points - 15  |                        This mini game has slight connections to concepts covered in class, and has an educational purpose in the gameplay.   Points - 10                        |                   This mini game barely or does not at all connect to concepts covered in class, and does not serve an educational purpose in gameplay.  Points - 5                    |  /15   |
+|       Mini Game 3        | This mini game utilizes or expands upon concepts taught in class and serves an educational purpose in the gameplay.   Points - 15  |                        This mini game has slight connections to concepts covered in class, and has an educational purpose in the gameplay.   Points - 10                        |                   This mini game barely or does not at all connect to concepts covered in class, and does not serve an educational purpose in gameplay.  Points - 5                    |  /15   |
+| Runs with no majors bugs |      The overall project, including mini games, compiles and runs without encountering any game-changing bugs.   Points - 10       |              The overall project, including mini games, compiles and runs with minor bugs but none that affect the overall quality of the gameplay.   Points - 7.5              |                        The overall project, including mini games, is not able to properly compile and run. The game contains game-changing bugs.  Points - 2.5                         |  /15   |
+|         Controls         |            Character movements, menu usage, and general playability of the game is smooth and easy to do.   Points - 10            |                   Character movements, menu usage, and general playability is adequate and/or the gameplay is not straightforward for the user.  Points - 7.5                   |                        Character movement, menu usage, and general playability is poorly created and/or the gameplay is difficult to understand.   Points - 2.5                        |  /15   |
+|          Audio           |                   The gameplay contains sound effects and background music that enrich the gameplay.  Points - 5                   |                      The gameplays sound effects and/or background music do not enrich gameplay. Do not make sense in the context of the game.  Points 2.5                      |                                                     The gameplay does not contain sound effects or background music.    Points - 1                                                     |   /5   |
+|           Fun            |                               You do not want to rip your hair out playing this game.    Points - 5                                |                             The gameplay causes you to rip out a few hairs, but you still have a manageable amount of hair leftover.  Points - 2.5                              |                                              The process of playing this game caused you to go bald… Mr. Clean, is that you?   Points - 1                                              |   /5   |
