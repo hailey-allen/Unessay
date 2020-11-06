@@ -2,6 +2,11 @@
 
 This is a temporary readme file as we don't really have anything set up yet
 
+If you want to try the game just press the F5 once you open the project.godot file
+
+Always make sure to pull from this repo before you start a new branch to work on the game
+
+
 Things we could include in this are for example:
 
 - How to launch the game, and controls (even if we end up explaining controls in the actual game)
