@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Title" type="Label"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -40.0
+margin_top = 184.0
+margin_right = 40.0
+margin_bottom = 198.0
+text = "Game Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
