@@ -1,12 +1,14 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/ui/font/default_font_48.tres" type="DynamicFont" id=1]
 
 [node name="Title" type="Label"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -40.0
-margin_top = 184.0
-margin_right = 40.0
-margin_bottom = 198.0
+margin_left = -104.5
+margin_right = 104.5
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 1 )
 text = "Game Name"
 __meta__ = {
 "_edit_use_anchors_": false
