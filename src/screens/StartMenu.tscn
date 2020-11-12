@@ -6,11 +6,13 @@
 [ext_resource path="res://assets/bg/mainbackg.png" type="Texture" id=4]
 [ext_resource path="res://src/ui/PlayButton.gd" type="Script" id=5]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=6]
-[ext_resource path="res://src/screens/HelpPop.gd" type="Script" id=7]
+[ext_resource path="res://HelpPop.gd" type="Script" id=7]
 
 [node name="StartMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -3.0
+margin_right = -3.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -45,8 +47,7 @@ script = ExtResource( 5 )
 margin_top = 30.0
 margin_bottom = 53.0
 text = "Help/Controls"
-script = ExtResource( 5 )
-next_scene_path = ""
+script = ExtResource( 7 )
 
 [node name="HelpPop" type="WindowDialog" parent="Menu/HelpButton"]
 visible = true
@@ -59,7 +60,6 @@ grow_vertical = 2
 mouse_default_cursor_shape = 7
 popup_exclusive = true
 window_title = "HELP / CONTROLS"
-script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -79,3 +79,4 @@ pause_mode = 2
 stream = ExtResource( 6 )
 volume_db = 1.0
 autoplay = true
+[connection signal="button_up" from="Menu/HelpButton" to="Menu/HelpButton" method="_on_HelpButton_button_up"]
