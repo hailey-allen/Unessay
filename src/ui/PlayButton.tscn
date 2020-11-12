@@ -6,7 +6,10 @@
 margin_right = 214.0
 margin_bottom = 40.0
 size_flags_vertical = 3
-text = "Play"
+text = "Help"
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 next_scene_path = "res://src/levels/LevelTemplate.tscn"
 [connection signal="button_up" from="." to="." method="_on_button_up"]
