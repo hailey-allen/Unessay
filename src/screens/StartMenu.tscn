@@ -6,13 +6,22 @@
 [ext_resource path="res://assets/bg/mainbackg.png" type="Texture" id=4]
 [ext_resource path="res://src/ui/PlayButton.gd" type="Script" id=5]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=6]
-[ext_resource path="res://HelpPop.gd" type="Script" id=7]
+[ext_resource path="res://src/ui/HelpPop.gd" type="Script" id=7]
 
 [node name="StartMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -3.0
 margin_right = -3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+stretch_mode = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -50,7 +59,6 @@ text = "Help/Controls"
 script = ExtResource( 7 )
 
 [node name="HelpPop" type="WindowDialog" parent="Menu/HelpButton"]
-visible = true
 margin_left = -150.0
 margin_top = -150.0
 margin_right = 375.0
@@ -67,16 +75,11 @@ __meta__ = {
 [node name="QuitButton" parent="Menu" instance=ExtResource( 1 )]
 margin_top = 60.0
 
-[node name="StartBackground" type="ParallaxBackground" parent="."]
-
-[node name="Sprite" type="Sprite" parent="StartBackground"]
-position = Vector2( 512, 287 )
-scale = Vector2( 2, 2 )
-texture = ExtResource( 4 )
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 pause_mode = 2
 stream = ExtResource( 6 )
 volume_db = 1.0
 autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 [connection signal="button_up" from="Menu/HelpButton" to="Menu/HelpButton" method="_on_HelpButton_button_up"]
