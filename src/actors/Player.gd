@@ -3,8 +3,9 @@ extends Actor
 # animation
 
 const MOVE_SPEED: = Vector2(5 * 32, 340)
-#const TERMINAL_VEL: = 20.0
+const RAY_MAGNITUDE: = 30
 onready var animated_sprite: AnimatedSprite = $AnimatedSprite
+onready var ray: RayCast2D = $RayCast2D
 
 func _physics_process(_delta: float) -> void:
 	# This variable is for jumps lasting as long as jump button is held, if jump let go
@@ -16,6 +17,7 @@ func _physics_process(_delta: float) -> void:
 
 
 func _process(_delta: float) -> void:
+	# Animations
 	if _velocity.y < 0:
 		animated_sprite.play("jump")
 	elif _velocity.y > 0 and not is_on_floor():
@@ -24,6 +26,20 @@ func _process(_delta: float) -> void:
 		animated_sprite.play("run")
 		animated_sprite.flip_h = Input.is_action_pressed("move_left")
 	else: animated_sprite.play("idle")
+
+	# Raycast direction
+	ray.cast_to.x = -RAY_MAGNITUDE if animated_sprite.flip_h else RAY_MAGNITUDE
+
+	# For interaction
+	# The interactable object should be in the 2d physics layer 4 name 'objects'
+	# It should also be in the group called 'interactable'
+	if ray.is_colliding():
+		var collider = ray.get_collider()
+		if collider.name == "TileMap" and Input.is_action_just_pressed("interact"):
+			# The thing that the raycast collides with should have a method named
+			# interaction() in order to actually work with the interaction
+#			collider.interaction
+			print("works")
 
 
 func get_input_direction() -> Vector2:
