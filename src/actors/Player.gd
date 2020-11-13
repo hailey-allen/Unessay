@@ -34,12 +34,11 @@ func _process(_delta: float) -> void:
 	# The interactable object should be in the 2d physics layer 4 name 'objects'
 	# It should also be in the group called 'interactable'
 	if ray.is_colliding():
-		var collider = ray.get_collider()
-		if collider.name == "TileMap" and Input.is_action_just_pressed("interact"):
+		var collider: PhysicsBody2D = ray.get_collider()
+		if collider.is_in_group('interactable') and Input.is_action_just_pressed("interact"):
 			# The thing that the raycast collides with should have a method named
 			# interaction() in order to actually work with the interaction
-#			collider.interaction
-			print("works")
+			collider.interaction()
 
 
 func get_input_direction() -> Vector2:
