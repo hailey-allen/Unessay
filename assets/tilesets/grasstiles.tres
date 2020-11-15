@@ -6,6 +6,7 @@
 extents = Vector2( 8, 8 )
 
 [resource]
+resource_local_to_scene = true
 0/name = "0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
