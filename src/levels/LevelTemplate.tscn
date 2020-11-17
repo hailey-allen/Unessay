@@ -30,7 +30,9 @@ next_world = ExtResource( 4 )
 
 [node name="Parallax_BG" parent="." instance=ExtResource( 5 )]
 
-[node name="InteractionTestObject" parent="." instance=ExtResource( 6 )]
+[node name="Objects" type="Node" parent="."]
+
+[node name="InteractionTestObject" parent="Objects" instance=ExtResource( 6 )]
 position = Vector2( 400.011, 131.484 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
