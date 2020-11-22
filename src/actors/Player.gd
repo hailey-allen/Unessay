@@ -10,7 +10,7 @@ onready var ray: RayCast2D = $RayCast2D
 func _physics_process(_delta: float) -> void:
 	# This variable is for jumps lasting as long as jump button is held, if jump let go
 	# while jumping, this is true
-#	var is_jump_interrupted: = Input.is_action_just_released("jump") and _velocity.y < 0.0
+	# var is_jump_interrupted: = Input.is_action_just_released("jump") and _velocity.y < 0.0
 	var direction: = get_input_direction()
 	_velocity = calculate_move_velocity(_velocity, direction, MOVE_SPEED)
 	_velocity = move_and_slide(_velocity, FLOOR_NORMAL)
