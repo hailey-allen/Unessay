@@ -1,16 +1,20 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=1]
-[ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/levels/Level02.tscn" type="PackedScene" id=4]
-[ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/objects/InteractionTestObject.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=7]
+[ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=1]
+[ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=4]
+[ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/levels/Level02.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/objects/InteractionTestObject.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
 
 [node name="LevelTemplate" type="Node2D"]
+script = ExtResource( 1 )
+enemies = ExtResource( 2 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 162.675, 96.5577 )
 
 [node name="Camera2D" parent="Player" index="1"]
@@ -18,26 +22,28 @@ limit_top = 0
 limit_right = 1024
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource( 1 )
+tile_set = ExtResource( 4 )
 cell_size = Vector2( 16, 16 )
 collision_use_kinematic = true
 format = 1
 tile_data = PoolIntArray( 458756, -1610612736, 0, 458758, 1610612736, 0, 458760, -1610612736, 0, 458761, 1610612736, 0, 458762, 1610612736, 0, 458764, -1610612736, 0, 458766, 1610612736, 0, 589828, 3, 0, 589829, 3, 0, 589830, 3, 0, 589831, 3, 0, 589832, 3, 0, 589833, 3, 0, 589834, 3, 0, 589835, 3, 0, 589836, 3, 0, 589837, 3, 0, 589838, 3, 0, 589839, 3, 0, 589844, -1610612736, 0, 589846, 1610612736, 0, 589848, -1610612736, 0, 589850, 1610612736, 0, 720916, 3, 0, 720917, 3, 0, 720918, 3, 0, 720919, 3, 0, 720920, 3, 0, 720921, 3, 0, 720922, 3, 0, 720923, 3, 0, 786463, -1610612736, 0, 786465, 1610612736, 0, 917535, 3, 0, 917536, 3, 0, 917537, 3, 0, 917538, 3, 0 )
 
-[node name="Portal2D" parent="." instance=ExtResource( 3 )]
+[node name="Portal2D" parent="." instance=ExtResource( 5 )]
 position = Vector2( 629.241, 277.222 )
-next_world = ExtResource( 4 )
+next_world = ExtResource( 6 )
 
-[node name="Parallax_BG" parent="." instance=ExtResource( 5 )]
+[node name="Parallax_BG" parent="." instance=ExtResource( 7 )]
 
 [node name="Objects" type="Node" parent="."]
+editor/display_folded = true
 
-[node name="InteractionTestObject" parent="Objects" instance=ExtResource( 6 )]
+[node name="InteractionTestObject" parent="Objects" instance=ExtResource( 8 )]
 position = Vector2( 400.011, 131.484 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
+stream = ExtResource( 9 )
 volume_db = -5.885
 autoplay = true
+
 
 [editable path="Player"]
