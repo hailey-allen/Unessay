@@ -3,18 +3,20 @@ extends Node2D
 # Declare member variables here. Examples:
 # var a: int = 2
 # var b: String = "text"
+export(PackedScene) var enemies
 var spawn1: =Vector2(248, 30)
 var spawn2: =Vector2(443, 30)
 var spawn3: =Vector2(555, 30)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for n in range(1):
+	for n in range(3):
 		EnemySpawn(n)
 
 # function to spawn enemies on given coordinates
 func EnemySpawn(number: int) -> void:
 	var enemyClass = load("res://src/actors/Enemy.gd")
 	var enemy = enemyClass.new()
+	enemy = enemies.instance()
 	var temp: Vector2
 	
 	if(number == 0):

@@ -3,10 +3,10 @@ extends "res://src/actors/Actor.gd"
 
 var MOVE_SPEED: =100
 #variable to check if enemy should move to the left
-var moveLeft: =true
+var moveLeft: bool
 #minimum and maximum x coordinate values
-var min_X: = 70
-var max_X: = 248
+var min_X: int
+var max_X: int
 var animation: AnimatedSprite
 
 # Called when the node enters the scene tree for the first time.
