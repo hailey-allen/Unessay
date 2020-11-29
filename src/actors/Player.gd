@@ -14,6 +14,16 @@ func _physics_process(_delta: float) -> void:
 	var direction: = get_input_direction()
 	_velocity = calculate_move_velocity(_velocity, direction, MOVE_SPEED)
 	_velocity = move_and_slide(_velocity, FLOOR_NORMAL)
+	
+	#check if player collides into enemy
+	for i in range(get_slide_count()):
+		var collision = get_slide_collision(i)
+		if collision.get_collider() == get_parent().get_node("Enemy"):
+			get_parent().PlayerDied()
+	
+	#check if player falls below and kill
+	if position.y > 576:
+		get_parent().PlayerDied()
 
 
 func _process(_delta: float) -> void:
@@ -58,3 +68,5 @@ func calculate_move_velocity(linear_velocity: Vector2, direction: Vector2, speed
 
 func get_lerp_weight() -> float:
 	return 0.2 if is_on_floor() else 0.07
+	
+

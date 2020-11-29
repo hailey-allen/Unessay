@@ -28,6 +28,10 @@ config/icon="res://icon.png"
 
 FadeInOut="*res://src/anim/FadeInOut.tscn"
 
+[debug]
+
+gdscript/completion/autocomplete_setters_and_getters=true
+
 [display]
 
 window/size/height=576

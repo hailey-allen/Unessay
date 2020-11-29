@@ -1,7 +1,7 @@
 extends "res://src/actors/Actor.gd"
 
 
-var MOVE_SPEED: =100
+var MOVE_SPEED: = 50
 #variable to check if enemy should move to the left
 var moveLeft: bool
 #minimum and maximum x coordinate values
@@ -29,3 +29,8 @@ func checkMoveLeft() -> int:
 		speed = MOVE_SPEED * 1
 		animation.flip_h = false
 	return speed
+
+#function checks is enemy collided into player
+func _on_side_collision_body_entered(body: PhysicsBody2D) -> void:
+	if body.get_name() =="Player":
+		get_parent().PlayerDied()

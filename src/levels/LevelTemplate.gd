@@ -7,6 +7,8 @@ export(PackedScene) var enemies
 var spawn1: =Vector2(248, 30)
 var spawn2: =Vector2(443, 30)
 var spawn3: =Vector2(555, 30)
+onready var restart = get_node("Runtime")
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	for n in range(3):
@@ -39,3 +41,10 @@ func EnemySpawn(number: int) -> void:
 	
 	enemy.set_position(temp)
 	add_child(enemy)
+	
+func PlayerDied() -> void:
+	restart.start()
+	get_node("Player").queue_free()
+
+func _on_Runtime_timeout() -> void:
+	get_tree().change_scene("res://src/levels/LevelTemplate.tscn")

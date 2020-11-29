@@ -12,3 +12,4 @@ func _physics_process(delta: float) -> void:
 	_velocity.y += GRAVITY * delta
 	# Scuffed way of adding a terminal y velocity
 	_velocity.y = min(_velocity.y, TERMINAL_VEL)
+	
