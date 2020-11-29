@@ -22,7 +22,7 @@ func _physics_process(_delta: float) -> void:
 			get_parent().PlayerDied()
 	
 	#check if player falls below and kill
-	if position.y > 576:
+	if position.y > 576 || position.x < 0:
 		get_parent().PlayerDied()
 
 
