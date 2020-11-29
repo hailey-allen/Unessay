@@ -35,7 +35,6 @@ next_world = ExtResource( 6 )
 [node name="Parallax_BG" parent="." instance=ExtResource( 7 )]
 
 [node name="Objects" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="InteractionTestObject" parent="Objects" instance=ExtResource( 8 )]
 position = Vector2( 400.011, 131.484 )
@@ -44,6 +43,5 @@ position = Vector2( 400.011, 131.484 )
 stream = ExtResource( 9 )
 volume_db = -5.885
 autoplay = true
-
 
 [editable path="Player"]

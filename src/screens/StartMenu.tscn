@@ -82,5 +82,4 @@ volume_db = -5.885
 autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-
 [connection signal="button_up" from="Menu/HelpButton" to="Menu/HelpButton" method="_on_HelpButton_button_up"]
