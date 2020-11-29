@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=2]
@@ -7,8 +7,15 @@
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=5]
 [ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/levels/LevelLJ.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/levels/Level03.gd" type="Script" id=8]
+[ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=9]
 
 [node name="Level03" type="Node2D"]
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+enemies = ExtResource( 9 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 64, 120 )
