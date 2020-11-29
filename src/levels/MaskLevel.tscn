@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=4]
+[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=5]
+[ext_resource path="res://src/objects/Mask Door.tscn" type="PackedScene" id=6]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Portal2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 783.084, 349.28 )
+
+[node name="Parallax_BG" parent="." instance=ExtResource( 3 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 786445, -1610612736, 0, 786447, 1610612736, 0, 786449, -1610612736, 0, 786451, 1610612736, 0 )
+
+[node name="Objects" type="Node" parent="."]
+
+[node name="Mask Door" parent="Objects" instance=ExtResource( 6 )]
+position = Vector2( 304.901, 145.521 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 244.728, 185.446 )
+
+[editable path="Player"]
