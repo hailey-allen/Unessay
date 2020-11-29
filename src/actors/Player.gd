@@ -6,6 +6,7 @@ const MOVE_SPEED: = Vector2(5 * 32, 340)
 const RAY_MAGNITUDE: = 30
 onready var animated_sprite: AnimatedSprite = $AnimatedSprite
 onready var ray: RayCast2D = $RayCast2D
+onready var soundfx: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 func _physics_process(_delta: float) -> void:
 	# This variable is for jumps lasting as long as jump button is held, if jump let go
@@ -19,6 +20,8 @@ func _physics_process(_delta: float) -> void:
 func _process(_delta: float) -> void:
 	# Animations
 	if _velocity.y < 0:
+		if Input.is_action_just_pressed("jump"):
+			soundfx.play()
 		animated_sprite.play("jump")
 	elif _velocity.y > 0 and not is_on_floor():
 		animated_sprite.play("fall")
