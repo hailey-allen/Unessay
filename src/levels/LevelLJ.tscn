@@ -5,7 +5,7 @@
 [ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=4]
 [ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/levels/Level02.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/levels/LevelFilePerm.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/objects/InteractionTestObject.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
