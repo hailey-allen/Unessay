@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/levels/LevelTemplate.gd" type="Script" id=1]
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
@@ -9,10 +9,18 @@
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/objects/InteractionTestObject.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
+[ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 206.795, 10 )
 
 [node name="LevelTemplate" type="Node2D"]
 script = ExtResource( 1 )
 enemies = ExtResource( 2 )
+
+[node name="SpawnLocation" parent="." instance=ExtResource( 10 )]
+position = Vector2( 112.705, 65.7078 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 109.161, 51.3678 )
@@ -44,4 +52,12 @@ stream = ExtResource( 9 )
 volume_db = -5.885
 autoplay = true
 
+[node name="KillArea" parent="." instance=ExtResource( 11 )]
+position = Vector2( 352.2, 268.6 )
+
+[node name="CollisionShape2D" parent="KillArea" index="0"]
+shape = SubResource( 1 )
+
 [editable path="Player"]
+
+[editable path="KillArea"]
