@@ -17,10 +17,11 @@ var spawn12: =Vector2(2624, 256)
 var spawn13: =Vector2(2976, 352)
 var spawn14: =Vector2(3136, 352)
 var spawn15: =Vector2(3296, 352)
+var spawn16: =Vector2(2116, 416)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for n in range(15):
+	for n in range(16):
 		EnemySpawn(n)
 
 # function to spawn enemies on given coordinates
@@ -32,8 +33,8 @@ func EnemySpawn(number: int) -> void:
 	
 	if(number == 0):
 		temp = spawn1
-		enemy.min_X = 35
-		enemy.max_X = 288
+		enemy.min_X = 43
+		enemy.max_X = 279
 		enemy.moveLeft = true
 	
 	if(number == 1):
@@ -44,20 +45,20 @@ func EnemySpawn(number: int) -> void:
 	
 	if(number == 2):
 		temp = spawn3
-		enemy.min_X = 808
-		enemy.max_X = 1384
+		enemy.min_X = 809
+		enemy.max_X = 1380
 		enemy.moveLeft = true
 	
 	if(number == 3):
 		temp = spawn4
-		enemy.min_X = 808
-		enemy.max_X = 1384
+		enemy.min_X = 809
+		enemy.max_X = 1380
 		enemy.moveLeft = true
 	
 	if(number == 4):
 		temp = spawn5
-		enemy.min_X = 808
-		enemy.max_X = 1384
+		enemy.min_X = 809
+		enemy.max_X = 1380
 		enemy.moveLeft = true
 	
 	if(number == 5):
@@ -118,6 +119,12 @@ func EnemySpawn(number: int) -> void:
 		temp = spawn15
 		enemy.min_X = 2944
 		enemy.max_X = 3328
+		enemy.moveLeft = true
+		
+	if(number == 15):
+		temp = spawn16
+		enemy.min_X = 1776
+		enemy.max_X = 2288
 		enemy.moveLeft = true
 	
 	enemy.set_position(temp)
