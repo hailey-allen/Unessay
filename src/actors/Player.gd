@@ -76,6 +76,7 @@ func die() -> void:
 	# Please make sure that is in your level
 	diefx.play()
 	self.position = spawn.position
+	self._velocity = Vector2.ZERO
 
 func _on_EnemyDetector_body_entered(body: Node) -> void:
 	diefx.play()

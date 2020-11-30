@@ -49,7 +49,7 @@ scale = Vector2( 43.514, 1 )
 shape = SubResource( 1 )
 
 [node name="SpawnLocation" parent="." instance=ExtResource( 9 )]
-position = Vector2( 125, 111.837 )
+position = Vector2( 105.57, 320 )
 
 [editable path="Player"]
 
