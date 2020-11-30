@@ -6,7 +6,8 @@ const MOVE_SPEED: = Vector2(5 * 32, 340)
 const RAY_MAGNITUDE: = 30
 onready var animated_sprite: AnimatedSprite = $AnimatedSprite
 onready var ray: RayCast2D = $RayCast2D
-onready var soundfx: AudioStreamPlayer2D = $AudioStreamPlayer2D
+onready var jumpfx: AudioStreamPlayer2D = $jumpstream
+onready var diefx: AudioStreamPlayer2D = $diestream
 onready var spawn = get_tree().get_root().get_children()[1].get_node("SpawnLocation")
 
 func _physics_process(_delta: float) -> void:
@@ -22,7 +23,7 @@ func _process(_delta: float) -> void:
 	# Animations
 	if _velocity.y < 0:
 		if Input.is_action_just_pressed("jump"):
-			soundfx.play()
+			jumpfx.play()
 		animated_sprite.play("jump")
 	elif _velocity.y > 0 and not is_on_floor():
 		animated_sprite.play("fall")
@@ -33,6 +34,7 @@ func _process(_delta: float) -> void:
 	
 	# Reset player
 	if Input.is_action_just_pressed("reset"):
+		diefx.play()
 		die()
 
 	# Raycast direction
@@ -72,7 +74,9 @@ func get_lerp_weight() -> float:
 func die() -> void:
 	# This function relies on the SpawnPoint Position2D node
 	# Please make sure that is in your level
+	diefx.play()
 	self.position = spawn.position
 
 func _on_EnemyDetector_body_entered(body: Node) -> void:
+	diefx.play()
 	die()

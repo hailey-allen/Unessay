@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,10 @@
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/anim/FadeInOut.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=7]
+[ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
 
 [node name="LevelTemplate" type="Node2D"]
 
@@ -37,4 +41,16 @@ stream = ExtResource( 7 )
 volume_db = -5.885
 autoplay = true
 
+[node name="KillArea" parent="." instance=ExtResource( 8 )]
+
+[node name="CollisionShape2D" parent="KillArea" index="0"]
+position = Vector2( 376, 496 )
+scale = Vector2( 43.514, 1 )
+shape = SubResource( 1 )
+
+[node name="SpawnLocation" parent="." instance=ExtResource( 9 )]
+position = Vector2( 125, 111.837 )
+
 [editable path="Player"]
+
+[editable path="KillArea"]
