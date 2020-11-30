@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/levels/LevelLJ.gd" type="Script" id=1]
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
@@ -9,6 +9,11 @@
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/objects/InteractionTestObject.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
+[ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 327.195, 10 )
 
 [node name="LevelLJ" type="Node2D"]
 script = ExtResource( 1 )
@@ -18,8 +23,11 @@ __meta__ = {
 }
 enemies = ExtResource( 2 )
 
+[node name="SpawnLocation" parent="." instance=ExtResource( 10 )]
+position = Vector2( 63.8204, 110.975 )
+
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 175.683, 108.618 )
+position = Vector2( 63.8204, 110.975 )
 
 [node name="Camera2D" parent="Player" index="1"]
 limit_top = 0
@@ -39,14 +47,22 @@ next_world = ExtResource( 6 )
 
 [node name="Parallax_BG" parent="." instance=ExtResource( 7 )]
 
-[node name="Objects" type="Node" parent="."]
-
-[node name="InteractionTestObject" parent="Objects" instance=ExtResource( 8 )]
-position = Vector2( 400.011, 131.484 )
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
 volume_db = -5.885
 autoplay = true
 
+[node name="KillArea" parent="." instance=ExtResource( 11 )]
+position = Vector2( 358.172, 563.4 )
+
+[node name="CollisionShape2D" parent="KillArea" index="0"]
+shape = SubResource( 1 )
+
+[node name="Objects" type="Node" parent="."]
+
+[node name="InteractionTestObject" parent="Objects" instance=ExtResource( 8 )]
+position = Vector2( 400.011, 131.484 )
+
 [editable path="Player"]
+
+[editable path="KillArea"]
