@@ -1,0 +1,49 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://src/levels/LevelHG.gd" type="Script" id=1]
+[ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=5]
+[ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/levels/Level03.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
+[ext_resource path="res://src/anim/FadeInOut.tscn" type="PackedScene" id=10]
+
+[node name="LevelHG" type="Node2D"]
+script = ExtResource( 1 )
+enemies = ExtResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+editor/display_folded = true
+position = Vector2( 126.619, 111.139 )
+
+[node name="Parallax_BG" parent="." instance=ExtResource( 4 )]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 131072, 0, 0, 262144, 0, 0, 327701, 2, 0, 393216, 0, 0, 458752, 0, 0, 524307, 3, 0, 524309, 2, 0, 589824, 0, 0, 655381, 2, 0, 655385, 7, 0, 655388, 7, 0, 720896, 0, 0, 720902, 3, 0, 720903, 3, 0, 720904, 3, 0, 720913, 3, 0, 786453, 2, 0, 786509, 2, 0, 786510, 1, 0, 786511, 1, 0, 786512, 1, 0, 851968, 0, 0, 852002, 0, 0, 852004, 0, 0, 852006, 0, 0, 852042, 1, 0, 917562, 2, 0, 917581, 2, 0, 983040, 0, 0, 983042, 0, 0, 983044, 0, 0, 983046, 0, 0, 983048, 0, 0, 983050, 0, 0, 983052, 0, 0, 983054, 0, 0, 983056, 0, 0, 983058, 0, 0, 983060, 0, 0, 983124, 7, 0, 983140, 0, 0, 1048646, 1, 0, 1048647, 1, 0, 1048648, 1, 0, 1048653, 2, 0, 1114154, 1, 0, 1114155, 1, 0, 1114156, 1, 0, 1114170, 2, 0, 1114202, 7, 0, 1114205, 7, 0, 1114208, 7, 0, 1114211, 7, 0, 1179754, 7, 0, 1179755, 7, 0, 1179758, 7, 0, 1245249, 1, 0, 1245250, 1, 0, 1245251, 1, 0, 1245261, 2, 0, 1310778, 2, 0, 1376333, 2, 0, 1441863, 1, 0, 1441864, 1, 0, 1507378, 1, 0, 1507379, 1, 0, 1507380, 1, 0, 1507381, 1, 0, 1507382, 1, 0, 1507383, 1, 0, 1507384, 1, 0, 1507385, 1, 0, 1507386, 1, 0, 1507405, 2, 0, 1638468, 1, 0, 1638469, 1, 0, 1638477, 2, 0, 1769549, 2, 0, 1835061, 0, 0, 1835071, 0, 0, 1966122, 7, 0, 1966125, 7, 0, 1966128, 7, 0, 1966131, 7, 0, 1966134, 7, 0, 1966137, 7, 0, 1966140, 7, 0, 1966143, 7, 0, 1966146, 7, 0, 1966149, 7, 0, 1966152, 7, 0, 1966155, 7, 0 )
+
+[node name="Portal2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1909.75, 385.117 )
+next_world = ExtResource( 7 )
+
+[node name="SpawnLocation" parent="." instance=ExtResource( 8 )]
+position = Vector2( 126.618, 111.139 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -5.885
+autoplay = true
+
+[node name="FadeInOut" parent="." instance=ExtResource( 10 )]
+margin_left = 133.1
+margin_top = 337.05
+margin_right = 133.1
+margin_bottom = 337.05
+
+
+[editable path="Player"]
