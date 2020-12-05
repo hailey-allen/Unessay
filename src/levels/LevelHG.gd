@@ -67,8 +67,8 @@ func EnemySpawn(number: int) -> void:
 		
 	if(number == 7):
 		temp = spawn8
-		enemy.min_X = 1448
-		enemy.max_X = 1590
+		enemy.min_X = 1464
+		enemy.max_X = 1591
 		enemy.moveLeft = true
 	
 	enemy.set_position(temp)
