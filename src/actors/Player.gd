@@ -74,6 +74,5 @@ func die() -> void:
 	# Please make sure that is in your level
 	self.position = spawn.position
 
-func _on_EnemyDetector_body_entered(body: KinematicBody2D) -> void:
-	print(body.name)
+func _on_EnemyDetector_body_entered(body: PhysicsBody2D) -> void:
 	die()

@@ -48,10 +48,6 @@ next_world = ExtResource( 6 )
 position = Vector2( 372.919, 130.101 )
 note = "yesssir"
 
-[node name="Note2" parent="Objects" instance=ExtResource( 8 )]
-position = Vector2( 530.411, 178.104 )
-note = "ay omg woah !!!"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
 volume_db = -5.885
