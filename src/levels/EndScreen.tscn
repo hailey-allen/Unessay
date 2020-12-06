@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/ui/QuitButton.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/ui/PlayButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/ui/font/default_font_48.tres" type="DynamicFont" id=4]
+[ext_resource path="res://src/ui/PlayButton.gd" type="Script" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -15,6 +16,8 @@ margin_top = 279.156
 margin_right = 600.477
 margin_bottom = 319.156
 text = "Play Again"
+script = ExtResource( 5 )
+next_scene_path = "res://src/levels/Level02.tscn"
 
 [node name="QuitButton" parent="." instance=ExtResource( 2 )]
 margin_left = 387.271
