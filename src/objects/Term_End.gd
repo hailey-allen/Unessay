@@ -27,7 +27,7 @@ func _process(delta):
 		
 		
 func set_label(Label):
-	Label.text = "Open"
+	Label.text = "Use"
 		
 
 

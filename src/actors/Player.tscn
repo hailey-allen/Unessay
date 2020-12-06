@@ -164,6 +164,7 @@ extents = Vector2( 11.343, 12.4448 )
 extents = Vector2( 11.343, 12.445 )
 
 [node name="Player" type="KinematicBody2D"]
+position = Vector2( -1.38898, 0.396858 )
 collision_layer = 2
 script = ExtResource( 1 )
 __meta__ = {
@@ -215,4 +216,13 @@ shape = SubResource( 33 )
 [node name="diestream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 8 )
 volume_db = 4.0
+
+[node name="InteracLabel" type="Label" parent="."]
+margin_left = -21.0
+margin_top = -45.0
+margin_right = 23.0
+margin_bottom = -17.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="body_entered" from="EnemyDetector" to="." method="_on_EnemyDetector_body_entered"]
