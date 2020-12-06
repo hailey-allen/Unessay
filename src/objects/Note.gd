@@ -11,3 +11,7 @@ func interaction():
 	Inventory.notes.append(note)
 	print(Inventory.get_notes())
 	anim_player.play("fade_out")
+
+
+func set_label(Label):
+	Label.text = "Read"
