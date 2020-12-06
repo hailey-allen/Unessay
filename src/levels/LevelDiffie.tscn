@@ -1,0 +1,136 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=5]
+[ext_resource path="res://src/actors/boss.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/objects/Termial.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/objects/Term_D1.gd" type="Script" id=8]
+[ext_resource path="res://src/objects/Term_D2.gd" type="Script" id=9]
+[ext_resource path="res://src/objects/Term_End.gd" type="Script" id=10]
+[ext_resource path="res://src/objects/Termial_Con.gd" type="Script" id=11]
+[ext_resource path="res://src/objects/Term_d1_title.gd" type="Script" id=12]
+[ext_resource path="res://src/util/KillArea_Diffie.gd" type="Script" id=13]
+[ext_resource path="res://src/objects/d1_pass1.gd" type="Script" id=14]
+[ext_resource path="res://src/objects/d1_pass2.gd" type="Script" id=15]
+[ext_resource path="res://src/objects/d1_pass3.gd" type="Script" id=16]
+[ext_resource path="res://src/objects/d2_title.gd" type="Script" id=17]
+[ext_resource path="res://src/objects/d2_pass2.gd" type="Script" id=18]
+[ext_resource path="res://src/objects/d2_pass1.gd" type="Script" id=19]
+[ext_resource path="res://src/objects/d2_pass3.gd" type="Script" id=20]
+[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=21]
+[ext_resource path="res://src/objects/Tend_pass1.gd" type="Script" id=22]
+[ext_resource path="res://src/objects/Tend_title.gd" type="Script" id=23]
+[ext_resource path="res://src/objects/Tend_pass2.gd" type="Script" id=24]
+[ext_resource path="res://src/objects/Tend_pass3.gd" type="Script" id=25]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 751.679, 23.0258 )
+
+[node name="LevelDiffie" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 262185, 1610612739, 0, 262186, 1610612739, 0, 262187, 1610612739, 0, 262188, 1610612739, 0, 262189, 1610612739, 0, 262190, 1610612739, 0, 262191, 1610612739, 0, 262192, 1610612739, 0, 262193, 1610612739, 0, 262194, 1610612739, 0, 262195, 1610612739, 0, 262196, 1610612739, 0, 262197, 1610612739, 0, 262198, 1610612739, 0, 262199, 1610612739, 0, 262200, 1610612739, 0, 262201, 1610612739, 0, 262202, 1610612739, 0, 262203, 1610612739, 0, 262204, 1610612739, 0, 262205, 1610612739, 0, 262206, 1610612739, 0, 262207, 1610612739, 0, 262208, 1610612739, 0, 262209, 1610612739, 0, 262210, 1610612739, 0, 262211, 1610612739, 0, 262212, 1610612739, 0, 262213, 1610612739, 0, 262214, 1610612739, 0, 262215, 1610612739, 0, 262216, 1610612739, 0, 262217, 1610612739, 0, 262218, 1610612739, 0, 327721, 1610612739, 0, 327722, 1610612739, 0, 327723, 1610612739, 0, 327724, 1610612739, 0, 327725, 1610612739, 0, 327726, 1610612739, 0, 327727, 1610612739, 0, 327728, 1610612739, 0, 327729, 1610612739, 0, 327730, 1610612739, 0, 327731, 1610612739, 0, 327732, 1610612739, 0, 327733, 1610612739, 0, 327734, 1610612739, 0, 327735, 1610612739, 0, 327736, 1610612739, 0, 327737, 1610612739, 0, 327738, 1610612739, 0, 327739, 1610612739, 0, 327740, 1610612739, 0, 327741, 1610612739, 0, 327742, 1610612739, 0, 327743, 1610612739, 0, 327744, 1610612739, 0, 327745, 1610612739, 0, 327746, 1610612739, 0, 327747, 1610612739, 0, 327748, 1610612739, 0, 327749, 1610612739, 0, 327750, 1610612739, 0, 327751, 1610612739, 0, 327752, 1610612739, 0, 327753, 1610612739, 0, 327754, 1610612739, 0, 393220, -1610612736, 0, 393257, 1610612738, 0, 393258, 1610612738, 0, 393289, 1610612738, 0, 393290, 1610612738, 0, 589865, 1610612738, 0, 589866, 1610612738, 0, 589897, 1610612738, 0, 589898, 1610612738, 0, 655417, 17, 0, 655418, 16, 0, 786473, 1610612738, 0, 786474, 1610612738, 0, 786488, 4, 0, 786489, 4, 0, 786490, 4, 0, 786491, 4, 0, 786505, 1610612738, 0, 786506, 1610612738, 0, 852021, 4, 0, 852030, 4, 0, 983081, 1610612738, 0, 983082, 1610612738, 0, 983113, 1610612738, 0, 983114, 1610612738, 0, 1048623, 4, 0, 1048624, 4, 0, 1048625, 4, 0, 1048626, 4, 0, 1048641, 4, 0, 1048642, 4, 0, 1048643, 4, 0, 1048644, 4, 0, 1179689, 1610612738, 0, 1179690, 1610612746, 0, 1179721, 10, 0, 1179722, 1610612738, 0, 1245226, 1610612746, 0, 1245257, 10, 0, 1310774, 4, 0, 1310775, 4, 0, 1310776, 4, 0, 1310777, 4, 0, 1310778, 4, 0, 1310779, 4, 0, 1310780, 4, 0, 1310781, 4, 0, 1310795, -1073741822, 0, 1310798, -1073741822, 0, 1310801, -1073741815, 0, 1376337, 2, 0, 1441832, 17, 0, 1441872, 17, 0, 1507375, 4, 0, 1507376, 4, 0, 1507377, 4, 0, 1507378, 4, 0, 1507379, 4, 0, 1507391, 4, 0, 1507392, 4, 0, 1507393, 4, 0, 1507394, 4, 0, 1507395, 4, 0, 1507396, 4, 0, 1572883, -1610612736, 0, 1572885, 1610612736, 0, 1572887, -1610612736, 0, 1572889, 1610612736, 0, 1572891, -1610612736, 0, 1572893, 1610612736, 0, 1572895, -1610612736, 0, 1572897, 1610612736, 0, 1572899, -1610612736, 0, 1572901, 1610612736, 0, 1572903, -1610612736, 0, 1572905, 1610612736, 0, 1572937, -1610612736, 0, 1572939, 1610612736, 0, 1572941, 4, 0, 1572942, 4, 0, 1572943, 4, 0, 1572944, 4, 0, 1572945, 9, 0, 1703955, 0, 0, 1703957, -1073741824, 0, 1703959, 0, 0, 1703961, -1073741824, 0, 1703963, 0, 0, 1703965, -1073741824, 0, 1703967, 0, 0, 1703969, -1073741824, 0, 1703971, 0, 0, 1703973, -1073741824, 0, 1703975, 0, 0, 1703977, -1073741824, 0, 1703979, -1610612721, 0, 1703980, -1073741813, 0, 1703981, -1073741813, 0, 1703982, -1073741813, 0, 1703983, -1073741813, 0, 1703984, -1073741813, 0, 1703985, -1073741810, 0, 1703986, -1073741811, 0, 1703987, -1073741811, 0, 1703988, -1073741811, 0, 1703989, -1073741811, 0, 1703990, -1073741810, 0, 1703991, -1073741810, 0, 1703992, -1073741811, 0, 1703993, -1073741811, 0, 1703994, -1073741811, 0, 1703995, -1073741811, 0, 1703996, -1073741811, 0, 1703997, -1073741811, 0, 1703998, -1073741810, 0, 1703999, -1073741811, 0, 1704000, -1073741811, 0, 1704001, -1073741811, 0, 1704002, -1073741811, 0, 1704003, -1073741813, 0, 1704004, -1073741813, 0, 1704005, -1073741813, 0, 1704006, -1073741813, 0, 1704007, -1073741810, 0, 1704008, -1073741809, 0, 1704009, 0, 0, 1704011, -1073741824, 0, 1769515, -1610612721, 0, 1769516, -1073741810, 0, 1769517, -1073741810, 0, 1769518, -1073741812, 0, 1769519, -1073741812, 0, 1769520, -1073741813, 0, 1769521, -1073741811, 0, 1769522, -1073741811, 0, 1769523, -1073741811, 0, 1769524, -1073741811, 0, 1769525, -1073741813, 0, 1769526, -1073741811, 0, 1769527, -1073741811, 0, 1769528, -1073741812, 0, 1769529, -1073741812, 0, 1769530, -1073741812, 0, 1769531, -1073741811, 0, 1769532, -1073741811, 0, 1769533, -1073741811, 0, 1769534, -1073741811, 0, 1769535, -1073741811, 0, 1769536, -1073741811, 0, 1769537, -1073741810, 0, 1769538, -1073741812, 0, 1769539, -1073741812, 0, 1769540, -1073741812, 0, 1769541, -1073741812, 0, 1769542, -1073741812, 0, 1769543, -1073741811, 0, 1769544, -1073741809, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 328, 384 )
+
+[node name="KillArea" parent="." instance=ExtResource( 3 )]
+position = Vector2( 700.46, 437.317 )
+script = ExtResource( 13 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KillArea"]
+shape = SubResource( 1 )
+
+[node name="SpawnLocation" parent="." instance=ExtResource( 4 )]
+position = Vector2( 343.559, 355.238 )
+
+[node name="Parallax_BG" parent="." instance=ExtResource( 2 )]
+
+[node name="Node2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 944, 312 )
+
+[node name="AnimatedSprite" parent="Node2D" index="0"]
+position = Vector2( -16, -60.4726 )
+scale = Vector2( 0.650803, 0.657437 )
+z_index = -4
+frame = 1
+
+[node name="Termial_Con" type="Node" parent="."]
+script = ExtResource( 11 )
+
+[node name="Term_D2" parent="Termial_Con" instance=ExtResource( 7 )]
+position = Vector2( 1288.28, 394.529 )
+script = ExtResource( 9 )
+
+[node name="Mask1" parent="Termial_Con/Term_D2/MaskMenu/UMaskMenu" index="1"]
+script = ExtResource( 19 )
+
+[node name="Mask2" parent="Termial_Con/Term_D2/MaskMenu/UMaskMenu" index="2"]
+script = ExtResource( 18 )
+
+[node name="Mask3" parent="Termial_Con/Term_D2/MaskMenu/UMaskMenu" index="3"]
+script = ExtResource( 20 )
+
+[node name="CurrentMask" parent="Termial_Con/Term_D2/MaskMenu/UMaskMenu" index="4"]
+script = ExtResource( 17 )
+
+[node name="Term_D1" parent="Termial_Con" instance=ExtResource( 7 )]
+position = Vector2( 645.837, 390.325 )
+script = ExtResource( 8 )
+
+[node name="Mask1" parent="Termial_Con/Term_D1/MaskMenu/UMaskMenu" index="1"]
+script = ExtResource( 14 )
+
+[node name="Mask2" parent="Termial_Con/Term_D1/MaskMenu/UMaskMenu" index="2"]
+script = ExtResource( 15 )
+
+[node name="Mask3" parent="Termial_Con/Term_D1/MaskMenu/UMaskMenu" index="3"]
+script = ExtResource( 16 )
+
+[node name="CurrentMask" parent="Termial_Con/Term_D1/MaskMenu/UMaskMenu" index="4"]
+script = ExtResource( 12 )
+
+[node name="Term_end" parent="Termial_Con" instance=ExtResource( 7 )]
+position = Vector2( 928.35, 192.308 )
+script = ExtResource( 10 )
+
+[node name="Mask1" parent="Termial_Con/Term_end/MaskMenu/UMaskMenu" index="1"]
+script = ExtResource( 22 )
+
+[node name="Mask2" parent="Termial_Con/Term_end/MaskMenu/UMaskMenu" index="2"]
+script = ExtResource( 24 )
+
+[node name="Mask3" parent="Termial_Con/Term_end/MaskMenu/UMaskMenu" index="3"]
+script = ExtResource( 25 )
+
+[node name="CurrentMask" parent="Termial_Con/Term_end/MaskMenu/UMaskMenu" index="4"]
+script = ExtResource( 23 )
+
+[node name="Col" parent="Termial_Con/Term_end" index="2"]
+position = Vector2( 2.60565, -92.5831 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
+autoplay = true
+
+[editable path="Player"]
+
+[editable path="Node2D"]
+
+[editable path="Termial_Con/Term_D2"]
+
+[editable path="Termial_Con/Term_D2/MaskMenu/UMaskMenu"]
+
+[editable path="Termial_Con/Term_D1"]
+
+[editable path="Termial_Con/Term_D1/MaskMenu/UMaskMenu"]
+
+[editable path="Termial_Con/Term_end"]
+
+[editable path="Termial_Con/Term_end/MaskMenu/UMaskMenu"]

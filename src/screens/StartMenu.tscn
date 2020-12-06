@@ -73,6 +73,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Label" type="Label" parent="Menu/HelpButton/HelpPop"]
+margin_right = 14.0
+margin_bottom = 28.0
+text = "
+Controls:
+
+w,a,s,d/ arrow keys -- moving the character
+w/ space bar -- Jump
+e -- is to interact with objects
+
+
+How to play:
+Make your way to the end of each level, hitting robots will kill you 
+sending back to the start of the level.
+
+To open doors you need write file permission, you are not the owner 
+or in the group of the file. Some doors with blue lazers require execute 
+permission."
+
 [node name="QuitButton" parent="Menu" instance=ExtResource( 6 )]
 margin_top = 60.0
 
