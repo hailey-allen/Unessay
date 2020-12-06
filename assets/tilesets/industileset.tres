@@ -32,7 +32,14 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [sub_resource type="VisualScript" id=10]
 data = {
 "base_type": "TileSet",
-"functions": [  ],
+"functions": [ {
+"data_connections": [  ],
+"function_id": -1,
+"name": "f_312843592",
+"nodes": [  ],
+"scroll": Vector2( -50, -170 ),
+"sequence_connections": [  ]
+} ],
 "is_tool_script": false,
 "signals": [  ],
 "variables": [  ],
@@ -258,7 +265,7 @@ resource_local_to_scene = true
 10/shape_one_way_margin = 0.0
 10/shapes = [  ]
 10/z_index = 0
-11/name = "industrial_ts.png 11"
+11/name = "industrial_ts.png 21"
 11/texture = ExtResource( 1 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 0.270588, 0.733333, 0.796078, 1 )
@@ -272,7 +279,7 @@ resource_local_to_scene = true
 11/shape_one_way_margin = 0.0
 11/shapes = [  ]
 11/z_index = 0
-12/name = "industrial_ts.png 12"
+12/name = "industrial_ts.png 20"
 12/texture = ExtResource( 1 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 0.270588, 0.733333, 0.796078, 1 )
@@ -286,7 +293,7 @@ resource_local_to_scene = true
 12/shape_one_way_margin = 0.0
 12/shapes = [  ]
 12/z_index = 0
-13/name = "industrial_ts.png 13"
+13/name = "industrial_ts.png 22"
 13/texture = ExtResource( 1 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 0.270588, 0.733333, 0.796078, 1 )
@@ -314,7 +321,7 @@ resource_local_to_scene = true
 14/shape_one_way_margin = 0.0
 14/shapes = [  ]
 14/z_index = 0
-15/name = "industrial_ts.png 15"
+15/name = "industrial_ts.png 25"
 15/texture = ExtResource( 1 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
@@ -328,7 +335,7 @@ resource_local_to_scene = true
 15/shape_one_way_margin = 0.0
 15/shapes = [  ]
 15/z_index = 0
-16/name = "industrial_ts.png 16"
+16/name = "industrial_ts.png 24"
 16/texture = ExtResource( 1 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
@@ -342,7 +349,7 @@ resource_local_to_scene = true
 16/shape_one_way_margin = 0.0
 16/shapes = [  ]
 16/z_index = 0
-17/name = "industrial_ts.png 17"
+17/name = "industrial_ts.png 23"
 17/texture = ExtResource( 1 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
