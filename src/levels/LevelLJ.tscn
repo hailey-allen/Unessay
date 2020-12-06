@@ -4,10 +4,10 @@
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=4]
-[ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/actors/objects/Portal2D.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/levels/LevelFilePerm.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/objects/InteractionTestObject.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/actors/objects/InteractionTestObject.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
 [ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=11]
@@ -53,7 +53,7 @@ volume_db = -5.885
 autoplay = true
 
 [node name="KillArea" parent="." instance=ExtResource( 11 )]
-position = Vector2( 358.172, 563.4 )
+position = Vector2( 361.032, 586.474 )
 
 [node name="CollisionShape2D" parent="KillArea" index="0"]
 shape = SubResource( 1 )

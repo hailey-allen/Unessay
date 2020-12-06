@@ -4,16 +4,16 @@
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=4]
-[ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/actors/objects/Portal2D.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/levels/Level02.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/objects/InteractionTestObject.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/actors/objects/Note.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
 [ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 206.795, 10 )
+extents = Vector2( 487.036, 10 )
 
 [node name="LevelTemplate" type="Node2D"]
 script = ExtResource( 1 )
@@ -44,8 +44,13 @@ next_world = ExtResource( 6 )
 
 [node name="Objects" type="Node" parent="."]
 
-[node name="InteractionTestObject" parent="Objects" instance=ExtResource( 8 )]
-position = Vector2( 400.011, 131.484 )
+[node name="Note" parent="Objects" instance=ExtResource( 8 )]
+position = Vector2( 372.919, 130.101 )
+note = "yesssir"
+
+[node name="Note2" parent="Objects" instance=ExtResource( 8 )]
+position = Vector2( 530.411, 178.104 )
+note = "ay omg woah !!!"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
@@ -53,9 +58,10 @@ volume_db = -5.885
 autoplay = true
 
 [node name="KillArea" parent="." instance=ExtResource( 11 )]
-position = Vector2( 352.2, 268.6 )
+position = Vector2( 208.525, 589.945 )
 
 [node name="CollisionShape2D" parent="KillArea" index="0"]
+position = Vector2( 277.088, 0 )
 shape = SubResource( 1 )
 
 [editable path="Player"]
