@@ -2,7 +2,7 @@ extends StaticBody2D
 
 onready var anim_player: AnimationPlayer = $AnimationPlayer
 # This note variable must be different for each note
-export var note: = ""
+export var note: = "A"
 
 func display_popup():
 	pass

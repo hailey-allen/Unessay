@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/ui/Password menu/passpopup.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=2]
+[ext_resource path="res://src/objects/Computer.gd" type="Script" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7.99976, 11.875 )
+
+[node name="Computer" type="StaticBody2D" groups=[
+"Interactable",
+]]
+collision_layer = 9
+collision_mask = 0
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 3704, 328 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 0, 16 )
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
+format = 1
+tile_data = PoolIntArray( 1245415, 17, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=[
+"Interactable",
+]]
+position = Vector2( 3704.13, 340 )
+shape = SubResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ComputerScreen" parent="CanvasLayer" instance=ExtResource( 1 )]
