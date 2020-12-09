@@ -6,7 +6,7 @@
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=5]
 [ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/levels/Level03.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/levels/LevelFilePerm.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
 [ext_resource path="res://src/anim/FadeInOut.tscn" type="PackedScene" id=10]
@@ -17,7 +17,6 @@ script = ExtResource( 1 )
 enemies = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-editor/display_folded = true
 position = Vector2( 126.619, 111.139 )
 
 [node name="Parallax_BG" parent="." instance=ExtResource( 4 )]
@@ -49,6 +48,5 @@ margin_bottom = 337.05
 [node name="KillArea" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1005.21, 534.671 )
 scale = Vector2( 100, 1 )
-
 
 [editable path="Player"]
