@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/bg/mainbackg.png" type="Texture" id=1]
 [ext_resource path="res://src/ui/Title.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://src/ui/PlayButton.gd" type="Script" id=4]
 [ext_resource path="res://src/ui/HelpPop.gd" type="Script" id=5]
 [ext_resource path="res://src/ui/QuitButton.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=7]
 
 [node name="StartMenu" type="Control"]
 anchor_right = 1.0
@@ -48,14 +47,14 @@ __meta__ = {
 }
 
 [node name="PlayButton" parent="Menu" instance=ExtResource( 3 )]
-margin_bottom = 25.0
+margin_bottom = 23.0
 text = "Play"
 script = ExtResource( 4 )
 next_scene_path = "res://src/screens/GameExplain.tscn"
 
 [node name="HelpButton" parent="Menu" instance=ExtResource( 3 )]
-margin_top = 29.0
-margin_bottom = 54.0
+margin_top = 30.0
+margin_bottom = 53.0
 text = "Help/Controls"
 script = ExtResource( 5 )
 
@@ -93,13 +92,7 @@ or in the group of the file. Some doors with blue lazers require execute
 permission."
 
 [node name="QuitButton" parent="Menu" instance=ExtResource( 6 )]
-margin_top = 58.0
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-pause_mode = 2
-stream = ExtResource( 7 )
-volume_db = -5.885
-autoplay = true
+margin_top = 60.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 [connection signal="button_up" from="Menu/HelpButton" to="Menu/HelpButton" method="_on_HelpButton_button_up"]
