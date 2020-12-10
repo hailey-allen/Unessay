@@ -12,17 +12,17 @@ func _ready():
 
 func _process(delta):
 	if control.state == 0 and control.share_cor == 2:
-		text = "Incorrect shared key shared, need to restart key share your new base for key exchange which is " + str(control.base) + ". Your new prime is " + str(control.mod)
+		text = "Incorrect shared key shared, you need to restart key share. Your new base for key exchange which is " + str(control.base) + ". Your new prime is " + str(control.mod)
 	elif control.state == 0:
 		text = "Your base for key exchange is " + str(control.base) + ". Your prime is " + str(control.mod)
 	elif control.state == 1:
 		control.re = false
 		control.share_cor = 0
-		text = "Your private key is " + str(control.pkey) + " Share your caculated public key of " + str(control.pubkey) +" Go to the terminal accross the gap"
+		text = "Your private key is " + str(control.pkey) + " Share your caculated public key of " + str(control.pubkey) +" Go to the terminal across the gap"
 	elif control.state == 2:
-		text = "Enter the public key that was shared with you to calculate the secert key"
+		text = "Enter the public key that was shared with you to calculate the secret key"
 	elif control.state == 3:
-		text = "Secert key is " + str(control.seckey) + " Go enter this into the main terminal in the middle of the room"
+		text = "Secret key is " + str(control.seckey) + " Go enter this into the main terminal in the middle of the room"
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

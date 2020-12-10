@@ -59,7 +59,7 @@ position = Vector2( 944, 312 )
 position = Vector2( -16, -60.4726 )
 scale = Vector2( 0.650803, 0.657437 )
 z_index = -4
-frame = 14
+frame = 13
 
 [node name="Termial_Con" type="Node" parent="."]
 script = ExtResource( 11 )

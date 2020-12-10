@@ -39,12 +39,12 @@ margin_right = 533.06
 margin_bottom = 263.94
 rect_scale = Vector2( 1.88776, 2.05806 )
 text = "The virus has detected you!!
-This isn't good the virus has detected you and is trying to slow you down. Its changing the permissions on files.
-If you come up to a door you'll have to go in a change the file permission to let you through. 
-Thankfully you have your sudo access to be able to change you password but remember your log in on an account that isn't in a group or the owner of any files.
+This isn't good that the virus has detected you and is now trying to slow you down. It's changing the permissions on files.
+If you come up to a door, you'll have to change the file permission to let you through. 
+Thankfully you have your sudo access to be able to change the file permissions but remember you are logged in on an account that isn't in a group or the owner of any files.
 
-Meaning you'll need to change the file permissions to let everyone access them. To get through the door you need
-to have write permission(2), there are also some doors with lasers that will need execute permission(1).
+This means you'll need to change the file permissions to let everyone access them. To get through a door you need
+to have write permission(2). There are also some doors with lasers that will need execute permission(1).
 
 Hopefully you''ll be able to figure out the permissions and continue on to save the worksheet answers.
 "

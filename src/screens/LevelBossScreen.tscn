@@ -39,13 +39,13 @@ margin_right = 533.06
 margin_bottom = 263.94
 rect_scale = Vector2( 1.88776, 2.05806 )
 text = "You've made it!
-The virus is just ahead all you need to do is inject the anti-virus at the terminal connected to the virus.
+The virus is just ahead, all you need to do is inject the anti-virus at the terminal connected to the virus.
 
 OH NO!!
 
-The virus has planned that you'd do this and is prepared. If you don't encode the anti-virus with mocha,the anti-virus will have no effect on the virus.
+The virus has anticipated that you'd do this and is prepared. If you don't encode the anti-virus with mocha,the anti-virus will have no effect on the virus.
 
-Go back and forth between the terminals on the ground level performing a Diffie Hellman keyexchange to be able to encode the anti-virus. After encoded go to the terminal at the top level and defeat the virus by injecting the anti-virus! "
+Go back and forth between the terminals on the ground level performing a Diffie Hellman keyexchange to be able to encode the anti-virus. After encoded, go to the terminal at the top level and defeat the virus by injecting the anti-virus! "
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -23,7 +23,7 @@ func _process(delta):
 		if pkey == control.seckey: 
 			randomize()
 			pkey = randi()%10+1
-		text = "Enter secert key " + str(pkey)
+		text = "Enter secret key " + str(pkey)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
