@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/levels/LevelHG.gd" type="Script" id=1]
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/levels/LevelFilePerm.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=8]
-[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
 [ext_resource path="res://src/anim/FadeInOut.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=11]
 
@@ -33,11 +32,6 @@ next_world = ExtResource( 7 )
 
 [node name="SpawnLocation" parent="." instance=ExtResource( 8 )]
 position = Vector2( 126.618, 111.139 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
-volume_db = -5.885
-autoplay = true
 
 [node name="FadeInOut" parent="." instance=ExtResource( 10 )]
 margin_left = 133.1

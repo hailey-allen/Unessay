@@ -8,7 +8,7 @@ onready var animated_sprite: AnimatedSprite = $AnimatedSprite
 onready var ray: RayCast2D = $RayCast2D
 onready var jumpfx: AudioStreamPlayer2D = $jumpstream
 onready var diefx: AudioStreamPlayer2D = $diestream
-onready var spawn = get_tree().get_root().get_children()[1].get_node("SpawnLocation")
+onready var spawn = get_tree().get_root().get_children()[2].get_node("SpawnLocation")
 
 func _physics_process(_delta: float) -> void:
 	# This variable is for jumps lasting as long as jump button is held, if jump let go
