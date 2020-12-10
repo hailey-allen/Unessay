@@ -7,11 +7,11 @@ extends Button
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	text = "Set UMask to 0741"
+	text = "Set UMask to 0541"
 	
 	
 func _pressed():
-	get_node("../../..").changeMask(741)
+	get_node("../../..").changeMask(541)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

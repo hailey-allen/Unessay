@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/ui/UMaskMenu/default_inventory_background.png" type="Texture" id=1]
+[ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/ui/PlayButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/ui/font/default_font_48.tres" type="DynamicFont" id=4]
+[ext_resource path="res://src/ui/ContinueButton.gd" type="Script" id=5]
+
+[node name="Level03Screen" type="Node2D"]
+
+[node name="Parallax_BG" parent="." instance=ExtResource( 2 )]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 70.7151
+margin_top = 70.7151
+margin_right = 277.715
+margin_bottom = 182.715
+rect_scale = Vector2( 3.68593, 3.80412 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mini1Label" type="Label" parent="."]
+margin_left = 208.778
+margin_top = 86.4296
+margin_right = 823.778
+margin_bottom = 128.43
+custom_fonts/font = ExtResource( 4 )
+text = "Minigame 3: Diffie Hellman"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 214.06
+margin_top = 155.941
+margin_right = 533.06
+margin_bottom = 263.94
+rect_scale = Vector2( 1.88776, 2.05806 )
+text = "You've made it!
+The virus is just ahead all you need to do is inject the anti-virus at the terminal connected to the virus.
+
+OH NO!!
+
+The virus has planned that you'd do this and is prepared. If you don't encode the anti-virus with mocha,the anti-virus will have no effect on the virus.
+
+Go back and forth between the terminals on the ground level performing a Diffie Hellman keyexchange to be able to encode the anti-virus. After encoded go to the terminal at the top level and defeat the virus by injecting the anti-virus! "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContinueButton" parent="." instance=ExtResource( 3 )]
+margin_left = 352.778
+margin_top = 401.915
+margin_right = 566.778
+margin_bottom = 441.915
+rect_scale = Vector2( 1.44164, 1.44 )
+text = "Continue"
+script = ExtResource( 5 )
+next_scene_path = "res://src/levels/LevelDiffie.tscn"
