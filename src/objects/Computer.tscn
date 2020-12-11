@@ -38,3 +38,4 @@ shape = SubResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ComputerScreen" parent="CanvasLayer" instance=ExtResource( 1 )]
+visible = false
