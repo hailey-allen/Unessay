@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/levels/LevelLJ.gd" type="Script" id=1]
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/screens/LevelBossScreen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=8]
-[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
 [ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/objects/InteractionTestObject.tscn" type="PackedScene" id=11]
 
@@ -46,11 +45,6 @@ position = Vector2( 1657.23, 171.517 )
 next_world = ExtResource( 7 )
 
 [node name="Parallax_BG" parent="." instance=ExtResource( 8 )]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
-volume_db = -5.885
-autoplay = true
 
 [node name="KillArea" parent="." instance=ExtResource( 10 )]
 position = Vector2( 358.172, 563.4 )
