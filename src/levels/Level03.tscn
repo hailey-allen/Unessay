@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/levels/Level03.gd" type="Script" id=1]
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
@@ -8,11 +8,13 @@
 [ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=6]
 [ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/levels/LevelLJ.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/objects/DoorPass.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/industrial_ts.png" type="Texture" id=12]
 [ext_resource path="res://src/objects/Computer.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/objects/Note.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/objects/DoorPass.gd" type="Script" id=15]
 [ext_resource path="res://src/objects/Note3.gd" type="Script" id=17]
 [ext_resource path="res://src/objects/Note4.gd" type="Script" id=18]
 [ext_resource path="res://src/objects/Note5.gd" type="Script" id=19]
@@ -480,6 +482,13 @@ note = ""
 position = Vector2( 3465.8, 274.313 )
 script = ExtResource( 21 )
 note = ""
+
+[node name="DoorPass" parent="." instance=ExtResource( 9 )]
+pause_mode = 2
+position = Vector2( 3830.9, 296 )
+scale = Vector2( 0.145, 0.213 )
+script = ExtResource( 15 )
+[connection signal="verified" from="Computer" to="DoorPass" method="_on_Computer_verified"]
 
 [editable path="Player"]
 

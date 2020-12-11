@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/ui/Password menu/ComputerScreen.gd" type="Script" id=3]
 
 [node name="ComputerScreen" type="Node2D"]
-visible = false
+pause_mode = 2
 script = ExtResource( 3 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -41,6 +41,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Help" type="Label" parent="."]
+margin_left = 256.0
+margin_top = 416.0
+margin_right = 270.0
+margin_bottom = 444.0
+text = "Type your password here,, if it's right the door on the right will open:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="InputBox" type="LineEdit" parent="."]
 margin_left = 256.0
 margin_top = 448.0
@@ -50,3 +60,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="visibility_changed" from="." to="." method="_on_ComputerScreen_visibility_changed"]
+[connection signal="text_entered" from="InputBox" to="." method="_on_InputBox_text_entered"]

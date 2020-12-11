@@ -11,6 +11,7 @@ extents = Vector2( 7.99976, 11.875 )
 [node name="Computer" type="StaticBody2D" groups=[
 "Interactable",
 ]]
+pause_mode = 2
 collision_layer = 9
 collision_mask = 0
 script = ExtResource( 3 )
@@ -38,3 +39,5 @@ shape = SubResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ComputerScreen" parent="CanvasLayer" instance=ExtResource( 1 )]
+[connection signal="verified" from="CanvasLayer/ComputerScreen" to="." method="_on_ComputerScreen_verified"]
+[connection signal="visibility_changed" from="CanvasLayer/ComputerScreen" to="." method="_on_ComputerScreen_visibility_changed"]
