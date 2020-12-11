@@ -1,5 +1,9 @@
 extends StaticBody2D
 
+onready var screen: = $CanvasLayer/ComputerScreen
+
+func _ready() -> void:
+	screen.visible = false
 
 func interaction() -> void:
 	makevis()
