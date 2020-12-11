@@ -47,7 +47,7 @@ shape = SubResource( 1 )
 
 [node name="Note" parent="." instance=ExtResource( 1 )]
 position = Vector2( 406.217, 126.709 )
-note = "note"
+note = "whatever"
 
 [editable path="Player"]
 

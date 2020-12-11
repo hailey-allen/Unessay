@@ -6,7 +6,7 @@ onready var popup: Popup = $CanvasLayer/Popup
 export var note: = ""
 export var is_fragment = false # True is fragment, false is hint
 
-const FRAGMENT: String = "Fragment of the password: "
+const FRAGMENT: String = "Password fragment: "
 const HINT: String = "Password hint: "
 
 func display_popup():

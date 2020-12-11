@@ -3,6 +3,7 @@
 [ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=1]
 
 [node name="BGMusic" type="AudioStreamPlayer"]
+pause_mode = 2
 stream = ExtResource( 1 )
 volume_db = -18.285
 autoplay = true
