@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/ui/Password menu/passpopup.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/ui/Password menu/ComputerScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=2]
 [ext_resource path="res://src/objects/Computer.gd" type="Script" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
@@ -38,4 +38,3 @@ shape = SubResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ComputerScreen" parent="CanvasLayer" instance=ExtResource( 1 )]
-visible = false
