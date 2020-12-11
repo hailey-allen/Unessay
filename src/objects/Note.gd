@@ -16,14 +16,12 @@ func display_popup():
 	else:
 		popup.get_node("Label").text = HINT + note
 	get_tree().paused = true
-	
+
 
 func interaction():
 	Inventory.notes.append(note)
 	print(Inventory.get_notes())
 	display_popup()
-	
-	
 	anim_player.play("fade_out")
 
 func set_label(Label):
