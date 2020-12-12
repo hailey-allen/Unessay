@@ -5,5 +5,5 @@ extends Node
 # used to store the messages from the note objects.
 var notes: = [] setget , get_notes
 
-func get_notes():
+func get_notes() -> Array:
 	return notes

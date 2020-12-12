@@ -9,22 +9,29 @@ export var is_fragment = false # True is fragment, false is hint
 const FRAGMENT: String = "Password fragment: "
 const HINT: String = "Password hint: "
 
-func display_popup():
-	popup.popup_centered()
+func get_full_note() -> String:
+	var full_note: = ""
 	if is_fragment:
-		popup.get_node("Label").text = FRAGMENT + note
+		full_note = FRAGMENT + note
 	else:
-		popup.get_node("Label").text = HINT + note
+		full_note = HINT + note
+	return full_note
+
+func display_popup(msg_to_display: String) -> void:
+	popup.popup_centered()
+	popup.get_node("Label").text = msg_to_display
 	get_tree().paused = true
 
 
-func interaction():
-	Inventory.notes.append(note)
-	print(Inventory.get_notes())
-	display_popup()
+func interaction() -> void:
+	var full_note = get_full_note()
+	Inventory.notes.append(full_note)
+
+	display_popup(full_note)
 	anim_player.play("fade_out")
 
-func set_label(Label):
+
+func set_label(Label) -> void:
 	Label.text = "Read"
 
 
