@@ -39,5 +39,6 @@ shape = SubResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ComputerScreen" parent="CanvasLayer" instance=ExtResource( 1 )]
+visible = false
 [connection signal="verified" from="CanvasLayer/ComputerScreen" to="." method="_on_ComputerScreen_verified"]
 [connection signal="visibility_changed" from="CanvasLayer/ComputerScreen" to="." method="_on_ComputerScreen_visibility_changed"]

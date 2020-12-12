@@ -3,6 +3,7 @@ extends StaticBody2D
 
 onready var screen: = $CanvasLayer/ComputerScreen
 onready var tree: = get_tree()
+var is_paused: bool = false
 
 signal verified # lol 
 
