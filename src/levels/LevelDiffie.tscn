@@ -39,6 +39,9 @@ tile_data = PoolIntArray( 262185, 1610612739, 0, 262186, 1610612739, 0, 262187, 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 328, 384 )
 
+[node name="Camera2D" parent="Player" index="1"]
+limit_left = 310
+
 [node name="KillArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 700.46, 437.317 )
 script = ExtResource( 13 )
@@ -58,7 +61,7 @@ position = Vector2( 944, 312 )
 position = Vector2( -16, -60.4726 )
 scale = Vector2( 0.650803, 0.657437 )
 z_index = -4
-frame = 7
+frame = 5
 
 [node name="Termial_Con" type="Node" parent="."]
 script = ExtResource( 11 )
