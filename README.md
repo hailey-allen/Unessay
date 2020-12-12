@@ -10,12 +10,13 @@ The only way the player can defeat the malware is by playing through a series of
 
 
 How to play:
+
 Make your way to the end of each level, hitting robots will kill you 
 sending back to the start of the level.
 
 To open doors you need write file permission, you are not the owner 
-or in the group of the file. Some doors with blue lazers require execute 
-permission."
+or in the group of the file. Some doors with blue lasers require execute 
+permission.
 
 w,a,s,d/ arrow keys -- moving the character
 w/ space bar -- Jump
