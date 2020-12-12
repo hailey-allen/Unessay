@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/actors/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/design/Parallax_BG.tscn" type="PackedScene" id=2]
@@ -20,7 +20,6 @@
 [ext_resource path="res://src/objects/d2_pass2.gd" type="Script" id=18]
 [ext_resource path="res://src/objects/d2_pass1.gd" type="Script" id=19]
 [ext_resource path="res://src/objects/d2_pass3.gd" type="Script" id=20]
-[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=21]
 [ext_resource path="res://src/objects/Tend_pass1.gd" type="Script" id=22]
 [ext_resource path="res://src/objects/Tend_title.gd" type="Script" id=23]
 [ext_resource path="res://src/objects/Tend_pass2.gd" type="Script" id=24]
@@ -59,7 +58,7 @@ position = Vector2( 944, 312 )
 position = Vector2( -16, -60.4726 )
 scale = Vector2( 0.650803, 0.657437 )
 z_index = -4
-frame = 13
+frame = 7
 
 [node name="Termial_Con" type="Node" parent="."]
 script = ExtResource( 11 )
@@ -114,10 +113,6 @@ script = ExtResource( 23 )
 
 [node name="Col" parent="Termial_Con/Term_end" index="2"]
 position = Vector2( 2.60565, -92.5831 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 21 )
-autoplay = true
 
 [editable path="Player"]
 
