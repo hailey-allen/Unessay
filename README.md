@@ -5,7 +5,7 @@ Team members (alphabetical order): Hailey, Hayden, Hrithvik, Lubdhak, Mohamed
 
 ## Playing the game
 
-If you want to play the game, download the unessay.zip file from releases, extract the two files in the zip file to the same directory, and launch exe. You'll probably get an antivirus thing saying this is a non-trusted application beware !!!! but don't worry this is just because we haven't signed this application, it is definitely not a virus.
+If you want to play the game, download the unessay.zip file from releases, extract the two files in the zip file to the same directory, and launch exe. You'll probably get an antivirus thing saying this is a non-trusted application beware (!!!!) but don't worry this is just because we haven't signed this application, it is definitely not a virus.
 
 ## Description
 
