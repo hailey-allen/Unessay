@@ -1,7 +1,6 @@
 # UNESSAY GROUP 33 CPSC329 Project
 
-
-Inline-style: 
+ 
 ![alt text](https://github.com/hailey-allen/Unessay/blob/main/assets/bg/mainbackg.png)
 
 
@@ -21,6 +20,9 @@ permission."
 ,a,s,d/ arrow keys -- moving the character
 w/ space bar -- Jump
 e -- is to interact with objects
+
+![alt text](https://github.com/hailey-allen/Unessay/blob/main/assets/player/double_jump.png)
+
 
 
 
