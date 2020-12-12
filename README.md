@@ -17,7 +17,7 @@ To open doors you need write file permission, you are not the owner
 or in the group of the file. Some doors with blue lazers require execute 
 permission."
 
-,a,s,d/ arrow keys -- moving the character
+w,a,s,d/ arrow keys -- moving the character
 w/ space bar -- Jump
 e -- is to interact with objects
 
