@@ -21,6 +21,7 @@ permission.
 - WASD / Arrow Keys -- moving the character
 - space bar -- Jump
 - E -- is to interact with objects
+- R -- Reset/Kill yourself
 
 ![alt text](https://github.com/hailey-allen/Unessay/blob/main/assets/player/double_jump.png)
 
