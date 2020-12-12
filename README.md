@@ -2,7 +2,7 @@
 
 
 Inline-style: 
-![alt text](https://github.com/hailey-allen/Unessay/blob/main/src/screens/StartMenu.tscn)
+![alt text](https://github.com/hailey-allen/Unessay/blob/main/assets/bg/mainbackg.png)
 
 
 For our Unessay project we decided to create a video game called The Virus Assassin, in which the player decides to take on a most villainous malware, which is plotting to take over the mocha server and release all the assignments answers to the students. We implemented the game using a game engine called Godot, which is an open source game engine that can be used to make all types of games. Godot supports a variety of of langauges that can be used to make games, including its own scripting language called GDScript. The overall setting intially takes place inside of mocha where the malevolent malware is running rampant; the player needs to traverse mocha in order to locate hidden malware and defeat them! There will be running dialogue throughout the gameplay nods to concepts learned in class. This running dialogue will also serve an educational role by indicating how the malware is able to interfere with mocha to conduct it’s negative acts and narrating the ways the player hinders these actions. Behaviours of malware learned in class will also determine where the malware is found, as well as what the malware is doing in mocha to steal and release the assignment files.
