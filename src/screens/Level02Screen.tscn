@@ -48,7 +48,8 @@ WAIT!! You are logged in to an account that isn't in a group or the owner of any
 This means you'll need to change the file permissions to let ANYONE access them. To get through a door you need to have write permission (2). However, there are also some doors with lasers that will require execute permission (1).
 
 Hopefully, you''ll be able to figure out the permissions and successfully save the worksheet answers!
-"
+
+**Note that to exit any pop-up screens, you must click 'E'**"
 __meta__ = {
 "_edit_use_anchors_": false
 }
