@@ -418,7 +418,7 @@ position = Vector2( 3901.27, 311.214 )
 next_world = ExtResource( 8 )
 
 [node name="SpawnLocation" parent="." instance=ExtResource( 10 )]
-position = Vector2( 3656, 367.214 )
+position = Vector2( 64, 128 )
 
 [node name="KillArea" parent="." instance=ExtResource( 11 )]
 

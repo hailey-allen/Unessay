@@ -1,5 +1,4 @@
 extends StaticBody2D
-# Level03 init SpawnLocation pos: 64,128
 
 onready var screen: = $CanvasLayer/ComputerScreen
 onready var tree: = get_tree()
