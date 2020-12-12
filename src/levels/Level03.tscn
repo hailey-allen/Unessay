@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/levels/Level03.gd" type="Script" id=1]
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
@@ -8,12 +8,13 @@
 [ext_resource path="res://assets/tilesets/industileset.tres" type="TileSet" id=6]
 [ext_resource path="res://src/objects/Portal2D.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/levels/LevelLJ.tscn" type="PackedScene" id=8]
-[ext_resource path="res://assets/music/Cinematic-electronic-track (online-audio-converter.com).wav" type="AudioStream" id=9]
+[ext_resource path="res://src/objects/DoorPass.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/util/SpawnLocation.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/util/KillArea.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/industrial_ts.png" type="Texture" id=12]
 [ext_resource path="res://src/objects/Computer.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/objects/Note.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/objects/DoorPass.gd" type="Script" id=15]
 [ext_resource path="res://src/objects/Note3.gd" type="Script" id=17]
 [ext_resource path="res://src/objects/Note4.gd" type="Script" id=18]
 [ext_resource path="res://src/objects/Note5.gd" type="Script" id=19]
@@ -416,11 +417,6 @@ tile_data = PoolIntArray( 0, 3, 0, 1, 3, 0, 2, 3, 0, 3, 3, 0, 4, 3, 0, 5, 3, 0, 
 position = Vector2( 3901.27, 311.214 )
 next_world = ExtResource( 8 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
-volume_db = -5.885
-autoplay = true
-
 [node name="SpawnLocation" parent="." instance=ExtResource( 10 )]
 position = Vector2( 64, 128 )
 
@@ -438,9 +434,6 @@ position = Vector2( 16, -16 )
 
 [node name="TileMap" parent="Computer" index="1"]
 tile_set = SubResource( 12 )
-
-[node name="ComputerScreen" parent="Computer/CanvasLayer" index="0"]
-visible = false
 
 [node name="KillArea2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 504, 256 )
@@ -489,6 +482,13 @@ note = ""
 position = Vector2( 3465.8, 274.313 )
 script = ExtResource( 21 )
 note = ""
+
+[node name="DoorPass" parent="." instance=ExtResource( 9 )]
+pause_mode = 2
+position = Vector2( 3830.9, 296 )
+scale = Vector2( 0.145, 0.213 )
+script = ExtResource( 15 )
+[connection signal="verified" from="Computer" to="DoorPass" method="_on_Computer_verified"]
 
 [editable path="Player"]
 
