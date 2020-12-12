@@ -22,7 +22,7 @@ _global_script_class_icons={
 
 config/name="Unessay Game"
 run/main_scene="res://src/screens/StartMenu.tscn"
-boot_splash/image="res://assets/bg/Screenshot (193).png"
+boot_splash/image="res://assets/bg/splash.png"
 config/icon="res://icon.png"
 
 [autoload]
