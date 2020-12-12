@@ -1,16 +1,30 @@
-# Unessay
-
-This is a temporary readme file as we don't really have anything set up yet
-
-If you want to try the game just press the F5 once you open the project.godot file
-
-Always make sure to pull from this repo before you start a new branch to work on the game
+# UNESSAY GROUP 33 CPSC329 Project " THE VIRUS ASSASSIN "
+Team members (alphabetical order): Hailey, Hayden, Hrithvik, Lubdhak, Mohamed
+ 
+![alt text](https://github.com/hailey-allen/Unessay/blob/main/assets/bg/mainbackg.png)
 
 
-Things we could include in this are for example:
+For our Unessay project we decided to create a video game called "The Virus Assassin", in which the player decides to take on a most villainous malware, which is plotting to take over the mocha server and release all the assignments answers to the students. We implemented the game using a game engine called Godot, which is an open source game engine. Godot supports a variety of of langauges that can be used to make games, including its own scripting language called GDScript which was utilized in the creation of this 2D platformer game. Overall, the game takes place inside of mocha where the malevolent malware is running rampant; thus, the player (Dr. Ryan Henry) needs to traverse mocha in order to locate the hidden malware and defeat it! There is running dialogue throughout the gameplay which makes nods to concepts learned in class. This running dialogue also serves an educational role by indicating how the malware is able to interfere with mocha to conduct it’s negative acts and narrating the ways the player hinders these actions. Behaviours of malware learned in class also determines where the malware is found, as well as what the malware is doing in mocha to steal and release the assignment files.
 
-- How to launch the game, and controls (even if we end up explaining controls in the actual game)
-- Explaining the source files
-- Other things I can't think of, will expand later on
+The only way the player can defeat the malware is by playing through a series of mini-games! Essentially, these mini-games were created with concepts taught throughout the class in mind, such as security, privacy and cryptography. One of the mini-games deals with the concept of passwords and password decrytion. Within this mini game, the player must attempt to decrypt a encrypted/hashed password based on knowledge covered at the beginning of the mini game, hints corresponding to the hashed password, and even small fragments of the password. Another mini-game uses the concept of Diffie-Hellman key exchange and covers the importance of public and private keys. In this manner, the mini game teaches the user about keeping their private keys (or what is used to make the private key) absolutely private! The third and final mini game will incorporate file permissions and the proper altering of them, as well as how important permissions can be in maintaining security.
 
-Make sure when you import any art assets that are pixelated to use the pre-set "2D Pixel". This is easily done by selecting the images in the "FileSystem" tab in the editor, and then choosing the pre-set "2D Pixel" and clicking re-import in the "Import" tab. This is important otherwise the pixelated assets will come out blurry. (this is all assuming of course that we continue on using pixelated art assets).
+
+How to play:
+
+Make your way to the end of each level, hitting robots will kill you 
+sending back to the start of the level.
+
+To open doors you need write file permission, you are not the owner 
+or in the group of the file. Some doors with blue lasers require execute 
+permission.
+
+- WASD / Arrow Keys -- moving the character
+- space bar -- Jump
+- E -- is to interact with objects
+
+![alt text](https://github.com/hailey-allen/Unessay/blob/main/assets/player/double_jump.png)
+
+
+
+
+

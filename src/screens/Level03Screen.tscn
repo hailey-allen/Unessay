@@ -39,8 +39,8 @@ margin_right = 532.0
 margin_bottom = 265.0
 rect_scale = Vector2( 1.88776, 2.05806 )
 text = "Oh no!!!!!
-The malware has altered your password- blocking access to the only account which has the power to stop the virus.
-However, the system is now weak, and you found a way to locate the hashed passwords, revealing yours to be... 
+The malware noticed you changing the file permissions, and has now altered your password- blocking access to the only account which has the power to stop the virus.
+However, the system has been weakened,, and you found a way to locate the hashed passwords. Yours is evealed to be... 
 
 bc1c74eab3d65b7b00ad74e77b13b5b7494420f2a816d0d71e9fd3f416b26fce
 
