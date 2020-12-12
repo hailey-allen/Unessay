@@ -1,5 +1,5 @@
 # UNESSAY GROUP 33 CPSC329 Project " THE VIRUS ASSASSIN "
-
+Team members (alphabetical order): Hailey, Hayden, Hrithvik, Lubdhak, Mohamed
  
 ![alt text](https://github.com/hailey-allen/Unessay/blob/main/assets/bg/mainbackg.png)
 
@@ -18,9 +18,9 @@ To open doors you need write file permission, you are not the owner
 or in the group of the file. Some doors with blue lasers require execute 
 permission.
 
-w,a,s,d/ arrow keys -- moving the character
-w/ space bar -- Jump
-e -- is to interact with objects
+- WASD / Arrow Keys -- moving the character
+- space bar -- Jump
+- E -- is to interact with objects
 
 ![alt text](https://github.com/hailey-allen/Unessay/blob/main/assets/player/double_jump.png)
 
