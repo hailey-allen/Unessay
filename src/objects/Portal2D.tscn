@@ -4,7 +4,7 @@
 [ext_resource path="res://src/objects/Portal2D.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 54.2982, 56.2725 )
+extents = Vector2( 91.0578, 89.187 )
 
 [node name="Portal2D" type="Area2D"]
 script = ExtResource( 2 )
