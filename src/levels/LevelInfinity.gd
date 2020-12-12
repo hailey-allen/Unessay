@@ -3,14 +3,14 @@ extends Node2D
 
 export(PackedScene) var enemies
 var spawn1: =Vector2(100, 100)
-var spawn2: =Vector2(400, 400)
+var spawn2: =Vector2(200, 400)
 var spawn3: =Vector2(570, 189)
 var spawn4: =Vector2(878, 349)
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for n in range(4):
+	for n in range(5):
 		EnemySpawn(n)
 
 # function to spawn enemies on given coordinates
@@ -30,13 +30,9 @@ func EnemySpawn(number: int) -> void:
 		temp = spawn2
 		enemy.min_X = 200
 		enemy.max_X = 600
-		enemy.moveLeft = false
-	
-	if(number == 2):
-		temp = spawn3
-		enemy.min_X = 553
-		enemy.max_X = 630
 		enemy.moveLeft = true
+	
+	
 	
 	if(number == 3):
 		temp = spawn4
