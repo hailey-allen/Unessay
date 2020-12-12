@@ -42,11 +42,12 @@ text = "The virus has detected you!!
 This isn't good- it  is now working hard to try to slow you down. It's begun changing the permissions on files to deny you access.
 Whenever you approach a door, you'll have to change the file permission to get through. 
 Thankfully, you have sudo access which allows you to change the file permissions. 
+
 WAIT!! You are logged in to an account that isn't in a group or the owner of any files.
 
 This means you'll need to change the file permissions to let ANYONE access them. To get through a door you need to have write permission (2). However, there are also some doors with lasers that will require execute permission (1).
 
-Hopefully you''ll be able to figure out the permissions and continue on to save the worksheet answers.
+Hopefully, you''ll be able to figure out the permissions and successfully save the worksheet answers!
 "
 __meta__ = {
 "_edit_use_anchors_": false
