@@ -15,7 +15,7 @@ func _pressed():
 
 func _process(delta):
 	if control.state == 3:
-		text = "Enter secert key " + str(control.seckey)
+		text = "Enter secret key " + str(control.seckey)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

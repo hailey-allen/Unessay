@@ -12,11 +12,11 @@ func _ready():
 
 func _process(delta):
 	if control.state == 0 and control.share_cor ==2:
-		text = "Incorrect secerty key entered, you need to make a new one"
+		text = "Incorrect secret key entered, you need to make a new one"
 	elif control.state == 3:
-		text = "Enter your secerty key to kill the virus"
+		text = "Enter your secret key to kill the virus"
 	else :
-		text = "Generate your secerty key to kill the virus"
+		text = "Generate your secret key to kill the virus"
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

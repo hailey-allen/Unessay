@@ -1,6 +1,8 @@
-# Credits to the assets that are being used
+# Credits 
 
-This file is just to store the credits to all the assets that are being used. If you use an asset please include some sort of credit here so we can keep track of it.
+This game of course could not have been possible without the Godot engine <https://godotengine.org/license>
+
+Assets credits
 
 - Daniel Linssen, <https://managore.itch.io/m6x11>
 - Cameron Tatz, <https://twitter.com/camtatz?lang=en>
