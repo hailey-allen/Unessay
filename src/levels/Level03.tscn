@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://src/levels/Level03.gd" type="Script" id=1]
 [ext_resource path="res://src/actors/Enemy.tscn" type="PackedScene" id=2]
@@ -13,11 +13,6 @@
 [ext_resource path="res://assets/industrial_ts.png" type="Texture" id=12]
 [ext_resource path="res://src/objects/Computer.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/objects/Note.tscn" type="PackedScene" id=14]
-[ext_resource path="res://src/objects/Note3.gd" type="Script" id=17]
-[ext_resource path="res://src/objects/Note4.gd" type="Script" id=18]
-[ext_resource path="res://src/objects/Note5.gd" type="Script" id=19]
-[ext_resource path="res://src/objects/Note6.gd" type="Script" id=20]
-[ext_resource path="res://src/objects/Note7.gd" type="Script" id=21]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1976, 32 )
@@ -461,28 +456,27 @@ note = "L33t"
 
 [node name="Note3" parent="." instance=ExtResource( 14 )]
 position = Vector2( 1608.27, 413.19 )
-script = ExtResource( 17 )
-note = ""
+note = "v4"
+is_fragment = true
 
 [node name="Note4" parent="." instance=ExtResource( 14 )]
 position = Vector2( 2270.45, 433.472 )
-script = ExtResource( 18 )
-note = ""
+note = "123"
+is_fragment = true
 
 [node name="Note5" parent="." instance=ExtResource( 14 )]
 position = Vector2( 2697.43, 320.768 )
-script = ExtResource( 19 )
-note = ""
+note = "The last airbender"
 
 [node name="Note6" parent="." instance=ExtResource( 14 )]
 position = Vector2( 3299.76, 478.967 )
-script = ExtResource( 20 )
-note = ""
+note = "A"
+is_fragment = true
 
 [node name="Note7" parent="." instance=ExtResource( 14 )]
 position = Vector2( 3465.8, 274.313 )
-script = ExtResource( 21 )
-note = ""
+note = "r!"
+is_fragment = true
 
 [editable path="Player"]
 

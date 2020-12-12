@@ -22,6 +22,8 @@ _global_script_class_icons={
 
 config/name="Unessay Game"
 run/main_scene="res://src/screens/StartMenu.tscn"
+boot_splash/image="res://assets/bg/Screenshot (194).png"
+boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 config/icon="res://icon.png"
 
 [autoload]
