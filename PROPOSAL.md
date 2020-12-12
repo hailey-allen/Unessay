@@ -1,7 +1,5 @@
 # Unessay Group 33 proposal <!-- omit in toc -->
 
-## Title: None yet we seriously need a game title <!-- omit in toc -->
-
 - [Mini Game Ideas](#mini-game-ideas)
 - [Proposal](#proposal)
 - [Write-up](#write-up)
