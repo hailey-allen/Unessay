@@ -2,7 +2,7 @@ extends Node2D
 
 onready var input_box: LineEdit = $InputBox
 # The password to enter into the textbox"
-const PASSWORD = "password"
+const PASSWORD = "4v4t4r!123"
 
 signal verified
 
