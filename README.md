@@ -9,3 +9,19 @@ For our Unessay project we decided to create a video game called The Virus Assas
 
 The only way the player can defeat the malware would be playing through a series of mini-games in-game. Essentially these mini-games were created with concepts taught throughout the class in mind, such as security, privacy and cryptography. One of the mini-games deals with the concept of passwords & password decrytion, within this mini game, the player will attempt to decrypt a number of encrypted/hashed passwords based on knowledge covered at the beginning of the mini game, hints corresponding to each hashed password, and similarities between hashed passwords. Another mini-game would be using the concept of Diffie-Hellman key exchange somewhat and will cover the importance of  public and private keys. In this manner, the mini game will teach the user about keeping their private keys (or what is used to make the private key) absolutely private! The third and final mini game will incorporate file permissions and changing file permissions, as well as how important they can be in maintaining security.
 
+
+How to play:
+Make your way to the end of each level, hitting robots will kill you 
+sending back to the start of the level.
+
+To open doors you need write file permission, you are not the owner 
+or in the group of the file. Some doors with blue lazers require execute 
+permission."
+
+,a,s,d/ arrow keys -- moving the character
+w/ space bar -- Jump
+e -- is to interact with objects
+
+
+
+
